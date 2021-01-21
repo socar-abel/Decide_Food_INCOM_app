@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "170833062042",
+    "project_id": "incomapp-bde9d",
+    "storage_bucket": "incomapp-bde9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170833062042:android:e70493e1deba7da2f49723",
+        "android_client_info": {
+          "package_name": "com.inha.incomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170833062042-dqg1h54bpet1s51iabcecridddha0gbd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inha.incomapp",
+            "certificate_hash": "636423ad51d68f0812867f5fedd27cba20bb4a44"
+          }
+        },
+        {
+          "client_id": "170833062042-bhgjt74t7vm8vag5srcvrn03rbgtut53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFT34XdaAM-dkLtK-ZwzMPxml-Rta5Bmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170833062042-bhgjt74t7vm8vag5srcvrn03rbgtut53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
