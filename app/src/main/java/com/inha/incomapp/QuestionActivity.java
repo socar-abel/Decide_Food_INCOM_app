@@ -52,47 +52,47 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         if(state == TYPE_STATE){
             switch (idx){
                 case 0:
-                    return "type_korean";
+                    return "type/korean";
                 case 1:
-                    return "type_japanese";
+                    return "type/japanese";
                 case 2:
-                    return "type_chinese";
+                    return "type/chinese";
                 case 3:
-                    return "type_western";
+                    return "type/western";
                 case 4:
-                    return "type_other";
+                    return "type/other";
             }
         }
         else if(state == TIME_STATE){
             switch (idx){
                 case 0:
-                    return "time_morning";
+                    return "time/morning";
                 case 1:
-                    return "time_lunch";
+                    return "time/lunch";
                 case 2:
-                    return "time_dinner";
+                    return "time/dinner";
                 case 3:
-                    return "time_dawn";
+                    return "time/dawn";
             }
         }
         else if(state == SITUATION_STATE){
             switch (idx){
                 case 0:
-                    return "situation_fast";
+                    return "situation/fast";
                 case 1:
-                    return "situation_slow";
+                    return "situation/slow";
                 case 2:
-                    return "situation_alchol";
+                    return "situation/alchol";
                 case 3:
-                    return "situation_many";
+                    return "situation/many";
             }
         }
         else if(state == SOUP_STATE){
             switch (idx){
                 case 0:
-                    return "soup";
+                    return "soup/yes_soup";
                 case 1:
-                    return "no_soup";
+                    return "soup/no_soup";
             }
         }
         return "";
