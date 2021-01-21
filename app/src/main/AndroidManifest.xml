@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.INCOMapp">
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".QuestionActivity"></activity>
+        <activity android:name=".ResultActivity" />
         <activity android:name=".SelectActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
