@@ -21,10 +21,12 @@
         android:orientation="vertical"
         android:paddingTop="200dp">
         <Button
+
             android:layout_width="250dp"
             android:layout_height="70dp"
             android:text="Menu Select"
             android:layout_above="@+id/b_rand"
+            android:id="@+id/b_select"
             android:layout_gravity="center"
             />
 
