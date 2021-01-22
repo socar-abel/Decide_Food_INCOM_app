@@ -34,6 +34,7 @@
         android:text="악인은 먹고 마시기 위해서 살고, 선인은 살기 위해 먹고 마신다. "
         android:fontFamily="@font/soojin"
         android:textColor="#FA5858"
+        android:layout_marginTop="16dp"
         android:textSize="15dp" />
 
     <TextView
@@ -47,8 +48,8 @@
         android:textSize="15dp" />
 
     <Button
-        android:layout_marginTop="50dp"
-        android:id="@+id/txt"
+        android:layout_marginTop="30dp"
+        android:id="@+id/title"
         android:layout_width="350dp"
         android:layout_height="80dp"
         android:text="드시고 싶은 음식의 유형은        무엇인가요? "

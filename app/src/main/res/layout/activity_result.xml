@@ -38,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Loading.."
+            android:layout_marginBottom="30dp"
             android:fontFamily="@font/soojin"
             android:textColor="#FA5858"
             android:textSize="35sp"
@@ -57,12 +58,13 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:text="Loading.."
+
             android:fontFamily="@font/soojin"
             android:gravity="center"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:paddingLeft="10sp"
-            android:paddingRight="10sp"
+            android:paddingLeft="24sp"
+            android:paddingRight="24sp"
             android:background="@drawable/background_rounding" />
 
 

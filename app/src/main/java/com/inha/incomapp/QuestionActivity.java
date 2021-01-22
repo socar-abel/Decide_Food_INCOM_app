@@ -27,6 +27,8 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     TextView ment;
     TextView person;
 
+    Button title;
+
     String[] results;
 
     @Override
@@ -41,6 +43,8 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         btn3 = (Button)findViewById(R.id.btn_q3);
         btn4 = (Button)findViewById(R.id.btn_q4);
         btn5 = (Button)findViewById(R.id.btn_q5);
+
+        title = (Button)findViewById(R.id.title);
 
         ment = (TextView)findViewById(R.id.ment);
         person = (TextView)findViewById(R.id.person);
@@ -108,15 +112,17 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         if(state == TYPE_STATE){
             ment.setText("악인은 먹고 마시기 위해서 살고, 선인은 살기위해 먹고 마신다.");
             person.setText("-소크라테스");
+            title.setText("드시고 싶은 음식의 유형은 무엇인가요?");
             b1.setText("한식");
             b2.setText("일식");
             b3.setText("중식");
             b4.setText("양식");
-            b5.setText("아무거나");
+            b5.setText("기타");
         }
         else if(state == TIME_STATE){
             ment.setText("잘못된 음식이란 것은 없다.");
             person.setText("-션 스튜어트");
+            title.setText("음식을 먹으려는 시간대는 언제인가요?");
             b1.setText("아침");
             b2.setText("점심");
             b3.setText("저녁");
@@ -126,17 +132,19 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         else if(state == SITUATION_STATE){
             ment.setText("좋은 음식은 좋은 대화로 끝이 난다.");
             person.setText("-조프리 네이어");
-            b1.setText("빠르게");
-            b2.setText("천천히");
-            b3.setText("술안주");
+            title.setText("음식을 먹을 상황은 어떤가요?");
+            b1.setText("빨리 먹어야 해요");
+            b2.setText("느긋하게 먹어도 돼요");
+            b3.setText("술안주가 필요해요");
             b4.setVisibility(View.GONE);
             b5.setVisibility(View.GONE);
         }
         else if(state == SOUP_STATE){
             ment.setText("음식에 대한 사랑보다 더 진실된 사랑은 없다.");
             person.setText("-조지 버나드 쇼");
-            b1.setText("국물");
-            b2.setText("국물 없음");
+            title.setText("국물을 드시고 싶나요?");
+            b1.setText("국물이 있는게 좋아요");
+            b2.setText("국물이 없는게 좋아요");
             b3.setVisibility(View.GONE);
             b4.setVisibility(View.GONE);
             b5.setVisibility(View.GONE);
