@@ -4,70 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionActivity"
+    tools:context=".SelectActivity"
     android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="질문"
-        android:textSize="60sp"
-        android:layout_marginTop="150sp"
-        android:layout_marginBottom="50sp"
-        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:orientation="vertical"
-        android:gravity="center">
-        <Button
-            android:id="@+id/btn_q1"
-            android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:text="Q1"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            />
-        <Button
-            android:id="@+id/btn_q2"
-            android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:text="Q2"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            />
-        <Button
-            android:id="@+id/btn_q3"
-            android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:text="Q3"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            />
-        <Button
-            android:id="@+id/btn_q4"
-            android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:text="Q4"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            />
-        <Button
-            android:id="@+id/btn_q5"
-            android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:text="Q5"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            />
+        android:background="@drawable/background"
+        android:paddingTop="25dp">
 
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Question"
+            android:fontFamily="@font/soojin"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/ment"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="악인은 먹고 마시기 위해서 살고, 선인은 살기 위해 먹고 마신다. "
+        android:fontFamily="@font/soojin"
+        android:textColor="#FA5858"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="-소크라테스"
+        android:fontFamily="@font/soojin"
+        android:textColor="#FA5858"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/txt"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text="드시고 싶은 음식의 유형은        무엇인가요? "
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#FA5858"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_q1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="한 식"
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#ff9956"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_q2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="일 식"
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#ff9956"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_q3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="중 식"
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#ff9956"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_q4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="양 식"
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#ff9956"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_q5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="기 타"
+        android:fontFamily="@font/soojin"
+        android:backgroundTint="#ff9956"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>

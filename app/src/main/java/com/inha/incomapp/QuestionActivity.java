@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class QuestionActivity extends AppCompatActivity implements View.OnClickListener{
@@ -23,6 +24,9 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     Button btn4;
     Button btn5;
 
+    TextView ment;
+    TextView person;
+
     String[] results;
 
     @Override
@@ -37,6 +41,9 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         btn3 = (Button)findViewById(R.id.btn_q3);
         btn4 = (Button)findViewById(R.id.btn_q4);
         btn5 = (Button)findViewById(R.id.btn_q5);
+
+        ment = (TextView)findViewById(R.id.ment);
+        person = (TextView)findViewById(R.id.person);
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -83,8 +90,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                     return "situation/slow";
                 case 2:
                     return "situation/alchol";
-                case 3:
-                    return "situation/many";
+
             }
         }
         else if(state == SOUP_STATE){
@@ -100,6 +106,8 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     void btnSetting(Button b1, Button b2, Button b3, Button b4, Button b5){
         if(state == TYPE_STATE){
+            ment.setText("악인은 먹고 마시기 위해서 살고, 선인은 살기위해 먹고 마신다.");
+            person.setText("-소크라테스");
             b1.setText("한식");
             b2.setText("일식");
             b3.setText("중식");
@@ -107,20 +115,26 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             b5.setText("아무거나");
         }
         else if(state == TIME_STATE){
+            ment.setText("잘못된 음식이란 것은 없다.");
+            person.setText("-션 스튜어트");
             b1.setText("아침");
             b2.setText("점심");
             b3.setText("저녁");
-            b4.setText("새벽");
+            b4.setText("야식");
             b5.setVisibility(View.GONE);
         }
         else if(state == SITUATION_STATE){
+            ment.setText("좋은 음식은 좋은 대화로 끝이 난다.");
+            person.setText("-조프리 네이어");
             b1.setText("빠르게");
             b2.setText("천천히");
             b3.setText("술안주");
-            b4.setText("양 많이");
+            b4.setVisibility(View.GONE);
             b5.setVisibility(View.GONE);
         }
         else if(state == SOUP_STATE){
+            ment.setText("음식에 대한 사랑보다 더 진실된 사랑은 없다.");
+            person.setText("-조지 버나드 쇼");
             b1.setText("국물");
             b2.setText("국물 없음");
             b3.setVisibility(View.GONE);

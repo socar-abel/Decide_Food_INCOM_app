@@ -42,7 +42,7 @@ public class SelectActivity extends AppCompatActivity implements View.OnClickLis
                 String[] results = new String[5];
                 results[TYPE_STATE] = choice(TYPE_STATE, new Random().nextInt(5));
                 results[TIME_STATE] = choice(TIME_STATE, new Random().nextInt(4));
-                results[SITUATION_STATE] = choice(SITUATION_STATE, new Random().nextInt(4));
+                results[SITUATION_STATE] = choice(SITUATION_STATE, new Random().nextInt(3));
                 results[SOUP_STATE] = choice(SOUP_STATE, new Random().nextInt(2));
                 intent = new Intent(SelectActivity.this, ResultActivity.class);
                 intent.putExtra("data",results);
@@ -86,8 +86,7 @@ public class SelectActivity extends AppCompatActivity implements View.OnClickLis
                     return "situation/slow";
                 case 2:
                     return "situation/alchol";
-                case 3:
-                    return "situation/many";
+
             }
         }
         else if(state == SOUP_STATE){

@@ -40,7 +40,7 @@ public class ResultActivity extends AppCompatActivity {
     Map<String, Object> map2;
     Map<String, Object> map3;
     //Map<String, String> map3 = new HashMap<String,String>();
-
+    String comment = "Loading..";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,8 @@ public class ResultActivity extends AppCompatActivity {
         String[] data = intent.getStringArrayExtra("data");
         Log.d("DATA",data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
 
-
+        ImageView img = (ImageView) findViewById(R.id.img);
+        Glide.with(this).load(R.drawable.loading).into(img);
 
         //database (kim sang woo)
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -160,25 +161,64 @@ public class ResultActivity extends AppCompatActivity {
 
 
                 //copiedMap3 에서 image 띄우기
-                ImageView img = (ImageView) findViewById(R.id.img);
+
                 FirebaseStorage storage = FirebaseStorage.getInstance();
                 StorageReference storageReference = storage.getReference();
 
                 //String 형 배열에 값 담기
                 String[] resultMenu = new String[copiedMap3.size()];
+                int random = (int) ( Math.random()*copiedMap3.size() );
+                String key = "";
+
                 int i=0;
                 for (String mapkey : copiedMap3.keySet()){
+
+                    if(i==random){
+                       key=mapkey;
+                        DatabaseReference comRef = FirebaseDatabase.getInstance().getReference();
+                        String s = "comment";
+                        comRef = database.getReference(s);
+
+                        comRef.addValueEventListener(new ValueEventListener() {
+
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                // This method is called once with the initial value and again
+                                // whenever data at this location is updated.
+                                Map<String,Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                                comment = map.get(mapkey).toString();
+                                TextView cmt = (TextView)findViewById(R.id.comment);
+                                cmt.setText(comment);
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError error) {
+                                // Failed to read value
+                                Log.w(TAG, "Failed to read value.", error.toException());
+                            }
+
+
+                        });
+
+                    }
+
                     resultMenu[i]=copiedMap3.get(mapkey).toString();
                     System.out.println("Key:"+mapkey+", Value:"+copiedMap3.get(mapkey));
                     Log.d(TAG, "Key:"+mapkey+", Value:"+copiedMap3.get(mapkey));
                     i++;
+
+
                 }
+
+
+
+
 
 
                 Log.d(TAG, "resultMenu is: " + resultMenu);
 
                 //resultMenu에서 random으로 1개 선택
-                int random = (int) ( Math.random()*copiedMap3.size() + 1);
+
                 String imageName = resultMenu[random]+".jpg";
 
                 Log.d(TAG, "imageName is: " + imageName);
