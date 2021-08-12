@@ -11,7 +11,7 @@ gdh : 구동현 ( front end, activity 구성 설계 )
 # App UI
 ![디푸1](https://user-images.githubusercontent.com/61315014/129161127-2b1d2b75-f77a-4f8f-9b34-68176d10895d.png)
 
-# Firebase - Realtime Database
+# Firebase
 ![디비1](https://user-images.githubusercontent.com/61315014/129161352-4733ccf7-61bb-43ee-86bc-5ff5827c3ce1.png)
 
 
