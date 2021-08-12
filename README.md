@@ -9,5 +9,5 @@ master : 김상우 ( db 설계, firebase - android 연동, 메뉴 추천 알고�
 gdh : 구동현 ( front end, activity 구성 설계 )
 
 # App UI
-![KakaoTalk_20210812_170021367](https://user-images.githubusercontent.com/61315014/129160534-0fc58998-1694-4826-8b58-d66b21d5f9d5.jpg){: width="70% height = "100%"}
+![KakaoTalk_20210812_170021367](https://user-images.githubusercontent.com/61315014/129160534-0fc58998-1694-4826-8b58-d66b21d5f9d5.jpg){: width="70% height="100%"}
 
