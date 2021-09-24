@@ -20,6 +20,7 @@ gdh : 구동현 ( front end, activity 구성 설계 )
 
 
 # Firebase
-![디비1](https://user-images.githubusercontent.com/61315014/129161352-4733ccf7-61bb-43ee-86bc-5ff5827c3ce1.png)
+<img src = "https://user-images.githubusercontent.com/61315014/129161352-4733ccf7-61bb-43ee-86bc-5ff5827c3ce1.png" width = "40%"/> 
+
 
 
