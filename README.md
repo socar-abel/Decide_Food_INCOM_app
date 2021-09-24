@@ -10,7 +10,7 @@ gdh : 구동현 ( front end, activity 구성 설계 )
 
 # App UI
 ![디푸1](https://user-images.githubusercontent.com/61315014/129161127-2b1d2b75-f77a-4f8f-9b34-68176d10895d.png)
-![KakaoTalk_20210924_163723952](https://user-images.githubusercontent.com/61315014/134637260-2d0a303c-c9d7-42b1-8706-09cf106ec888.jpg)
+<img src = "https://user-images.githubusercontent.com/61315014/134637260-2d0a303c-c9d7-42b1-8706-09cf106ec888.jpg" width = "50%"/>
 
 
 
