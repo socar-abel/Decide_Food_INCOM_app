@@ -8,6 +8,10 @@ master : 김상우 ( db 설계, firebase - android 연동, 메뉴 추천 알고�
 
 gdh : 구동현 ( front end, activity 구성 설계 )
 
+# Architecture
+<img src = "https://user-images.githubusercontent.com/61315014/134638823-317da6e8-6a4b-49d4-8c3a-c68f75abd7bf.png" width = "40%"/>
+   
+   
 # App UI
 <img src = "https://user-images.githubusercontent.com/61315014/129161127-2b1d2b75-f77a-4f8f-9b34-68176d10895d.png" width = "25%"/>  <img src = "https://user-images.githubusercontent.com/61315014/134637260-2d0a303c-c9d7-42b1-8706-09cf106ec888.jpg" width = "25%"/>
    
